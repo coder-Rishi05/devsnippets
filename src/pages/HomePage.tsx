@@ -1,9 +1,12 @@
 import MainLayout from "../layouts/MainLayout";
+import Main from "./Main";
+import Navbar from "./Navbar";
 
 const HomePage = () => {
   return (
     <MainLayout>
-      <div>Home Page</div>
+      <Navbar />
+      <Main />
     </MainLayout>
   );
 };
