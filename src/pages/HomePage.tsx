@@ -1,12 +1,18 @@
 import MainLayout from "../layouts/MainLayout";
-import Main from "./Main";
-import Navbar from "./Navbar";
+import { snippets as initialSnippets  } from "../data/snippets";
+import SnippetCard from "../components/snippets/SnippetCard";
 
 const HomePage = () => {
+
+  const [snippets,setSnippets] = React.useState(initialSnippets);
+
   return (
     <MainLayout>
-      <Navbar />
-      <Main />
+      <div className="grid gap-4">
+        {snippets.map((snippet) => (
+          <SnippetCard key={snippet.id} snippet={snippet} />
+        ))}
+      </div>
     </MainLayout>
   );
 };
