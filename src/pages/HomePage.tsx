@@ -1,10 +1,11 @@
 import MainLayout from "../layouts/MainLayout";
 import { snippets as initialSnippets  } from "../data/snippets";
 import SnippetCard from "../components/snippets/SnippetCard";
+import { useState } from "react";
 
 const HomePage = () => {
 
-  const [snippets,setSnippets] = React.useState(initialSnippets);
+  const [snippets,setSnippets] = useState(initialSnippets);
 
   return (
     <MainLayout>

@@ -1,5 +1,6 @@
 import React from "react";
 import HomePage from "./pages/HomePage";
+import Navbar from "./layouts/Navbar";
 
 const App = () => {
   return (
@@ -10,3 +11,5 @@ const App = () => {
 };
 
 export default App;
+
+
